@@ -1,7 +1,7 @@
 import { getRandomIndices } from '../../utils'
 
-describe('Verify Items Left Counter', () => {
-  it('Items left counter is accurate and selects random list items', () => {
+describe('Verify Clear Complete Button', () => {
+  it('The Clear Complete button removed all completed items', () => {
     cy.fixture('general.json').then((data) => {
       cy.visit(data.todoSite);
       const todoName = "Test"
