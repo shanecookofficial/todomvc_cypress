@@ -1,20 +1,24 @@
 describe('Initial Site Load', () => {
   it('ToDoMVC loads with a blank todo list', () => {
-    // Open the TodoMVC site
-    cy.visit('https://todomvc.com/examples/react/dist/')
+    cy.fixture('general.json').then((data) => {
 
-    // Check that the todo list is initially empty
+      // Open the TodoMVC site
+      cy.visit(data.todoSite)
 
-    // Todo input box is present
-    cy.get('input.new-todo#todo-input[data-testid="text-input"]').should('exist');
+      // Check that the todo list is initially empty
 
-    // toggle-all-container is not present (only present when todo-list is not empty)
-    cy.get('[data-testid="toggle-all"]').should('not.exist');
+      // Todo input box is present
+      cy.get('input.new-todo#todo-input[data-testid="text-input"]').should('exist');
 
-    // todo-list is empty
-    cy.get('[data-testid="todo-list"]').should('be.empty');
+      // toggle-all-container is not present (only present when todo-list is not empty)
+      cy.get('[data-testid="toggle-all"]').should('not.exist');
 
-    // footer is not present (only present when todo-list is not empty)
-    cy.get('[data-testid="footer"]').should('not.exist');
+      // todo-list is empty
+      cy.get('[data-testid="todo-list"]').should('be.empty');
+
+      // footer is not present (only present when todo-list is not empty)
+      cy.get('[data-testid="footer"]').should('not.exist');
+    })
   })
+
 })
