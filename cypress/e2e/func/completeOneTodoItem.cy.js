@@ -1,3 +1,14 @@
+/*
+Objective: Verify that clicking the circle next to a todo item marks it as completed.
+
+Test Steps:
+
+1. Add a todo item.
+2. Click the circle next to the item.
+
+Expected Result: The item should be marked as completed and have a slash through it.
+*/
+
 describe('Complete One Todo Item', () => {
   it('The single todo item is complete', () => {
     cy.fixture('general.json').then((data) => {

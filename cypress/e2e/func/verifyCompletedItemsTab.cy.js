@@ -1,3 +1,14 @@
+/*
+Objective: Verify that the 'Completed' button filters and shows only completed items.
+
+Test Steps:
+
+1. Add and complete several todo items.
+2. Click the 'Completed' button.
+
+Expected Result: Only completed items should be visible.
+*/
+
 describe('Verify Completed Items Tab', () => {
   it('Only completed items are shown in the completed items tab', () => {
     cy.fixture('general.json').then((data) => {

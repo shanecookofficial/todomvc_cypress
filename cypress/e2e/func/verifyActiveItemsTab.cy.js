@@ -1,3 +1,14 @@
+/*
+Objective: Verify that the 'Active' button filters and shows only active items.
+
+Test Steps:
+
+1. Add some todo items and complete a few.
+2. Click the 'Active' button.
+
+Expected Result: Only active (non-completed) items should be visible.
+*/
+
 describe('Verify Active Items Tab', () => {
   it('Only active items are shown in the active items tab', () => {
     cy.fixture('general.json').then((data) => {

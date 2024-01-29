@@ -1,3 +1,15 @@
+/*
+Objective: Verify that hovering over a todo item and clicking the 'x' removes it.
+
+Test Steps:
+
+1. Add a todo item.
+2. Hover over the item.
+3. Click the 'x' that appears.
+
+Expected Result: The item should be removed from the list.
+*/
+
 describe('Remove One Todo Item', () => {
   it('The single todo item is removed', () => {
     cy.fixture('general.json').then((data) => {

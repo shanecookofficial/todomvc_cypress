@@ -1,3 +1,14 @@
+/*
+Objective: Verify that the items left counter displays the correct number.
+
+Test Steps:
+
+1. Add some todo items and complete some of them.
+2. Check the counter in the bottom left corner.
+
+Expected Result: The counter should display the number of active (non-completed) items.
+*/
+
 import { getRandomIndices } from '../../utils'
 
 describe('Verify Items Left Counter', () => {

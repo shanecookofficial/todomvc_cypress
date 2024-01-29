@@ -1,3 +1,14 @@
+/*
+Objective: Verify that the site loads with a blank todo list.
+
+Test Steps:
+
+1. Open the TodoMVC site.
+2. Check that the todo list is initially empty.
+
+Expected Result: The todo list should be empty on initial load.
+*/
+
 describe('Initial Site Load', () => {
   it('ToDoMVC loads with a blank todo list', () => {
     cy.fixture('general.json').then((data) => {

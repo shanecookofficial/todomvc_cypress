@@ -1,3 +1,15 @@
+/*
+Objective: Verify that a user can create a todo item.
+
+Test Steps:
+
+1. Click on the "What needs to be done" bar.
+2. Type a todo item name.
+3. Press Enter.
+
+Expected Result: The new todo item should appear in the list.
+*/
+
 describe('Create a Todo Item', () => {
   it('A Todo Item was created', () => {
     cy.fixture('general.json').then((data) => {

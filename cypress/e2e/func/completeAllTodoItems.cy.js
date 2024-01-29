@@ -1,3 +1,14 @@
+/*
+Objective: Verify that clicking the down arrow marks all items as completed.
+
+Test Steps:
+
+1. Add multiple todo items.
+2. Click the down arrow.
+
+Expected Result: All todo items should be marked as completed.
+*/
+
 describe('Complete All Todo Items', () => {
   it('All Todo Items are completed', () => {
     cy.fixture('general.json').then((data) => {

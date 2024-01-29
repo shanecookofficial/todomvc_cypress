@@ -1,3 +1,14 @@
+/*
+Objective: Verify that 'Clear completed' removes all completed todo items.
+
+Test Steps:
+
+1. Add and complete several todo items.
+2. Click 'Clear completed'.
+
+Expected Result: All completed items should be removed from the list.
+*/
+
 import { getRandomIndices } from '../../utils'
 
 describe('Verify Clear Complete Button', () => {
