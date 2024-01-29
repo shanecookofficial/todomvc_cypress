@@ -15,10 +15,13 @@ describe('Complete All Todo Items', () => {
 
       // Verify all todo list items are completed
       cy.get('.todo-list').find('li').each(($li, index) => {
-
         expect($li).to.have.class('completed');
-      });
 
+        cy.wrap($li).find('[data-testid="todo-item-label"]').should($label => {
+          const style = window.getComputedStyle($label[0]);
+          expect(style.textDecoration).to.include('line-through');
+        });
+      });
     })
   })
 })
