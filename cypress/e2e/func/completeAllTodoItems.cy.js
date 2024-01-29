@@ -11,7 +11,7 @@ describe('Complete All Todo Items', () => {
       }
 
       // Click down arrow to complete all items
-      cy.get('[data-testid="toggle-all"]').click()
+      cy.get('[data-testid="toggle-all"]').click();
 
       // Verify all todo list items are completed
       cy.get('.todo-list').find('li').each(($li, index) => {
