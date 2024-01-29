@@ -1,0 +1,15 @@
+{
+  "name": "todomvc_cypress",
+  "version": "1.0.0",
+  "description": "My name is Shane Cook and I am gradutating with a Bachelor of Science in Software Engineering April 2024 with an emphasis in Software Quality Assurance.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.3"
+  }
+}
