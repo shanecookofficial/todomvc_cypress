@@ -37,7 +37,7 @@ describe('Verify Items Left Counter', () => {
         // Click the Clear Completed button
         cy.get('.clear-completed').click();
 
-        // Verify all of the completed items are removed
+        // Verify all of the completed items are removed 
         cy.get('[data-testid="todo-list"]').find('li').should('have.length', randomNum - randomCount);
       });
     });
