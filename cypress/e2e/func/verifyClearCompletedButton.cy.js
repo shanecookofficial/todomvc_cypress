@@ -33,6 +33,12 @@ describe('Verify Items Left Counter', () => {
           const numberFromText = parseInt(text.match(/\d+/)[0], 10);
           expect(numberFromText).to.equal(randomNum - randomCount);
         });
+
+        // Click the Clear Completed button
+        cy.get('.clear-completed').click();
+
+        // Verify all of the completed items are removed
+        cy.get('[data-testid="todo-list"]').find('li').should('have.length', randomNum - randomCount);
       });
     });
   });
